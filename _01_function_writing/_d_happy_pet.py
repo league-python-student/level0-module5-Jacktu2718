@@ -6,6 +6,8 @@ import turtle
 
 if __name__ == '__main__':
     jack = turtle.Turtle()
+    window = Tk()
+    window.withdraw()
     # TODO)
     #   1. Ask the user to enter the type of pet they want (give them a few
     #      choices).
@@ -16,27 +18,15 @@ if __name__ == '__main__':
     #      Each activity should increase (or decrease) the pet's happiness
     #      level by a different amount, depending on the kind of pet they
     #      have. For example, a fish might not enjoy a walk!
-    pet = simpledialog.askstring(title='pet selector',
-                                 prompt='what pet do you want? dog,eagle,shark, mountain lion, panda, human')
+    pet = simpledialog.askstring(None, prompt="which pet do you want? dog,eagle,shark, mountain lion, panda")
 
+    happylevel =0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    pass
-
-
-
-
-
-
+    activities = simpledialog.askstring(None, prompt="What do you want to do with your " + pet + ". Such as feed,walk,do not care and play")
+    if activities == 'feed' or activities =='walk' or activities == 'play':
+        happylevel+=1
+        messagebox.showinfo(None, message="Your pets happylevel is " + str(happylevel))
+    elif activities == 'do not care':
+        happylevel-=1
+        messagebox.showinfo(None, message="Your pets happylevel is " + str(happylevel))
+pass

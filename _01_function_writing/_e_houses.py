@@ -1,6 +1,7 @@
 """
 Have the turtle draw a row of houses.
 """
+import turtle
 from tkinter import messagebox, simpledialog, Tk
 
 
@@ -25,4 +26,15 @@ if __name__ == '__main__':
     #      (JUST the roof part): draw_pointy_roof, draw_flat_roof
     #   11) By calling the correct "roof" function, make large houses have
     #      flat roofs and all the others have pointy roofs.
+
+
+
+
+    jack = turtle.Turtle()
+
+
+
+
+
+
     pass
