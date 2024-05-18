@@ -12,4 +12,11 @@ if __name__ == '__main__':
     #     is prime.
     #  3. If the number is divisible by any number other than 1 or itself,
     #     the number is not prime.
+    number = simpledialog.askstring(None, prompt='Can you pick a number between 1-100?')
+
+
+
+
+
+
     pass

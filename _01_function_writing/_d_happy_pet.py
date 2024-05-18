@@ -18,7 +18,7 @@ if __name__ == '__main__':
     #      Each activity should increase (or decrease) the pet's happiness
     #      level by a different amount, depending on the kind of pet they
     #      have. For example, a fish might not enjoy a walk!
-    pet = simpledialog.askstring(None, prompt="which pet do you want? dog,eagle,shark, mountain lion, panda")
+    pet = simpledialog.askstring(None, prompt="which pet do you want? dog,eagle,shark, mountain lion, panda or anything")
 
     happylevel =0
 

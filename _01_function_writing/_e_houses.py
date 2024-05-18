@@ -38,7 +38,7 @@ if __name__ == '__main__':
     jack.goto(-300, -300)
     jack.pendown()
     jack.left(90)
-
+    jack.pensize(2)
     def roof(roof):
 
         if roof == 'pointy':
@@ -72,8 +72,8 @@ if __name__ == '__main__':
         jack.forward(50)
         jack.left(90)
         jack.pencolor('black')
-        jack.pensize(1)
-    for i in range(5):
+        jack.pensize(2)
+    for i in range(8):
         user_size = simpledialog.askstring(None, prompt='what size do you want your house to be?(small, medium, large)')
         user_roof = simpledialog.askstring(None, prompt='Do you want a pointy roof or a flat roof?')
         house(user_size, user_roof)
