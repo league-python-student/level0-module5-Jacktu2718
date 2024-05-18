@@ -6,6 +6,9 @@ from tkinter import messagebox, simpledialog, Tk
 
 
 if __name__ == '__main__':
+
+    window=Tk()
+    window.withdraw()
     # TODO)
     #   1) Move the turtle to the left side of the window near the bottom.
     #   2) Draw ONE flat-topped house with height=100 and green grass after it.
@@ -31,10 +34,59 @@ if __name__ == '__main__':
 
 
     jack = turtle.Turtle()
+    jack.penup()
+    jack.goto(-300, -300)
+    jack.pendown()
+    jack.left(90)
+
+    def roof(roof):
+
+        if roof == 'pointy':
+            jack.right(45)
+            jack.forward(35)
+            jack.right(90)
+            jack.forward(35)
+            jack.right(45)
+        elif roof == 'flat':
+            jack.right(90)
+            jack.forward(50)
+            jack.right(90)
+
+    def house(size, roof1):
+        length = 0
+        if size == 'small':
+            length = 60
+        elif size == "medium":
+            length = 120
+        elif size =="large":
+            length = 250
+
+        jack.forward(length)
+        roof(roof1)
+        jack.forward(length)
+
+    def grass():
+        jack.left(90)
+        jack.pencolor('green')
+        jack.pensize(5)
+        jack.forward(50)
+        jack.left(90)
+        jack.pencolor('black')
+        jack.pensize(1)
+    for i in range(5):
+        user_size = simpledialog.askstring(None, prompt='what size do you want your house to be?(small, medium, large)')
+        user_roof = simpledialog.askstring(None, prompt='Do you want a pointy roof or a flat roof?')
+        house(user_size, user_roof)
+        grass()
 
 
 
 
 
 
-    pass
+
+
+
+
+
+    window.mainloop()
