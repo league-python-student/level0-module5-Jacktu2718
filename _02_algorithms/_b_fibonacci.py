@@ -8,7 +8,7 @@ from tkinter import messagebox, simpledialog, Tk
 
 if __name__ == '__main__':
     # TODO)
-    #  here is more than one way to code a solution to this.
+    #  There is more than one way to code a solution to this.
     #  The following steps give you some guidelines for one of them.
     #  1. Declare and initialize three int variables: number1, number2,
     #     and sum.

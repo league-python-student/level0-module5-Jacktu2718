@@ -6,17 +6,18 @@ from tkinter import messagebox, simpledialog, Tk
 
 
 if __name__ == '__main__':
+    w=Tk()
+    w.withdraw()
     # TODO)
     #  1. Ask the user for a number
     #  2. Use a for loop, if statement, and modulo to find if the number
     #     is prime.
     #  3. If the number is divisible by any number other than 1 or itself,
     #     the number is not prime.
-    number = simpledialog.askstring(None, prompt='Can you pick a number between 1-100?')
+    prime = simpledialog.askinteger(None, prompt='Can  you give me a number between 1-100?')
+    if prime < 2:
+
+    for i in range(2, prime):
 
 
-
-
-
-
-    pass
+pass
