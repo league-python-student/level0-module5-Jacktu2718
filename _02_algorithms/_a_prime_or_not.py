@@ -17,7 +17,11 @@ if __name__ == '__main__':
     prime = simpledialog.askinteger(None, prompt='Can  you give me a number between 1-100?')
     if prime < 2:
 
-    for i in range(2, prime):
+        for i in range(2, prime/2):
+            if(prime%i==0):
+                messagebox.showinfo(None, message='This number is not prime')
+                break
+
 
 
 pass
