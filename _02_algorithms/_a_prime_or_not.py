@@ -14,20 +14,20 @@ if __name__ == '__main__':
     #     is prime.
     #  3. If the number is divisible by any number other than 1 or itself,
     #     the number is not prime.
-    prime = simpledialog.askinteger(None, prompt='Can  you give me a number between 1-100?')
-    num = prime
+    prime = simpledialog.askinteger(None, prompt='Can  you give me number that you want to know if it is prime?')
+    number = prime
 
-    if num > 1:
+    if number > 1:
         # Iterate from 2 to n // 2
-        for i in range(2, (num // 2) + 1):
+        for i in range(2, (number // 2) + 1):
 
-            if (num % i) == 0:
-                print(num, "is not a prime number")
+            if (number % i) == 0:
+                print(number, "is not a prime number")
                 break
         else:
-            print(num, "is a prime number")
+            print(number, "is a prime number")
     else:
-        print(num, "is not a prime number")
+        print(number, "is not a prime number")
 
 
 pass

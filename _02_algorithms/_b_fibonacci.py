@@ -19,9 +19,18 @@ if __name__ == '__main__':
     #  4. Now try to figure out how to change the variables before the for
     #     loop repeats so the sequence of numbers is correct.
 
+    n = 10
+    num1 = 0
+    num2 = 1
+    next_number = num2
+    count = 1
 
-
-0,1,1,2,3,5,8,13,21,34,55,89,
+    while count <= n:
+        print(next_number, end=" ")
+        count += 1
+        num1, num2 = num2, next_number
+        next_number = num1 + num2
+    print()
 
 
 pass
